@@ -1,0 +1,75 @@
+.post
+	display: inline-flex
+	flex-direction: column
+	width: calc(100%)
+	margin-bottom: 10px
+	align-items: center
+	background-color: white
+	border-radius: 3px
+	padding: 20px 0px 10px 0px
+	cursor: pointer
+	a 
+		width: calc(100%)
+		text-decoration: none
+		color: black
+
+	header.post-header
+		display: inline-flex
+		position: relative
+		flex-direction: row
+		width: calc(100%)
+		//background-color: rgba(250,250,250,1)
+		align-items: center
+		
+		.tag-name
+			display: flex
+			padding: 10px 20px 10px 10px 
+			
+			background-color: #F9C248
+			color: white
+
+		.user-img-container
+			display: flex
+			margin: 5px 5px
+			width: 20px
+			height: 20px
+			padding: 7px
+			align-items: center
+			justify-content: center
+			background-color: #a4d9ff
+			border-radius: 50%
+
+			>img.user-img
+				with: 20px
+				height: 20px
+		.time
+			padding: 10px
+			color: rgba(160,160,160,1)
+
+		img.delete-icon
+			position: absolute
+			top: 0
+			right: 0
+			//transform: translate(0px,-50%)
+			margin: 5px 10px
+			height: 15px
+			width: 15px
+
+	.content
+		display: inline-flex
+		flex-direction: column
+		align-items: flex-start
+		width: calc(100% - 30px)
+		padding: 15px 15px
+
+		h3
+			margin: 5px 0px 10px 0px
+			font-size: 1.5em
+		>p
+			display: inline-flex
+			max-width: calc(100%)
+			white-space: pre-wrap
+			margin: 0px 0px 10px 0px
+
+		span.more-text
+			color: rgba(200,200,200,1)

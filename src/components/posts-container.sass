@@ -1,0 +1,57 @@
+#posts-container
+	display: inline-flex
+	position: relative
+	flex-direction: column
+	align-items: center
+	margin-top: 65px
+	width: calc(100vw - 20px)
+	padding: 5px 10px
+	max-width: calc(600px)
+	//border: 1px solid gray
+
+
+	.create-post
+		position: fixed
+		display: flex
+		background-color: #83530c
+		border-radius: 50%
+		padding: 10px
+		bottom: 20px
+		align-items: center
+		justify-content: center
+		right: calc(50vw - 620px / 2 + 20px )
+		box-shadow: 3px 3px 5px rgba(0,0,0,.5)
+		cursor: pointer
+		a
+			width: 25px
+			height: 25px
+		img
+			width: 25px
+			height: 25px
+
+
+	#edit-mode
+		min-height: calc(100vh - 65px - 50px)
+		cursor: text
+
+		.content
+			&:focus
+				outline: none
+			
+			>div
+				margin-bottom: 10px
+
+
+	#delete-info-msg
+		position: fixed
+		padding: 5px 10px
+		left: 50%
+		bottom: 10px
+		transform: translate(-50%,0px)
+		background-color: black
+		border-radius: 15px
+		color: white
+
+			
+			
+
